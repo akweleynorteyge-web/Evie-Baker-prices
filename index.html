@@ -14,7 +14,7 @@
       href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <header class="site-header">
@@ -22,6 +22,7 @@
         <a class="brand" href="#top" aria-label="Evie Baker home">EVIE BAKER</a>
         <nav class="main-nav" aria-label="Main navigation">
           <a href="#cake-menu">Cakes</a>
+          <a href="#gallery">Gallery</a>
           <a href="#add-ons">Add-ons</a>
           <a href="#order">Order</a>
           <a href="#contact">Contact</a>
@@ -33,9 +34,9 @@
       <section class="hero section-shell">
         <div class="container hero-grid">
           <div class="hero-copy">
-            <p class="eyebrow">Cakes made for your moments</p>
-            <h1>EVIE BAKER</h1>
-            <p class="tagline">Cakes made for your moments.</p>
+            <p class="eyebrow">Custom cakes for every celebration</p>
+            <h1>Sweet moments, designed beautifully.</h1>
+            <p class="tagline">Bespoke cakes for birthdays, weddings, and every joyful occasion.</p>
             <p class="intro">
               Custom cakes, beautiful finishes and delicious flavours, made to order in Ghana.
             </p>
@@ -43,9 +44,15 @@
               <a href="#cake-menu" class="btn btn-primary">VIEW CAKES</a>
               <a href="#order" class="btn btn-secondary" data-whatsapp="true">ORDER ON WHATSAPP</a>
             </div>
+            <ul class="hero-meta" aria-label="Key features">
+              <li>Made to order</li>
+              <li>Custom designs</li>
+              <li>Delivery available</li>
+            </ul>
           </div>
 
           <div class="hero-visual">
+            <span class="hero-badge">Signature Designs</span>
             <img
               src="https://images.unsplash.com/photo-1558301211-0d8c8ddee6ec?auto=format&fit=crop&w=900&q=80"
               alt="Elegant cake with soft pink frosting and floral accents"
@@ -63,7 +70,10 @@
 
           <div class="menu-grid">
             <article class="pricing-card large-card">
-              <h3>STANDARD CAKES</h3>
+              <div class="card-header">
+                <h3>STANDARD CAKES</h3>
+                <span class="pill">Most popular</span>
+              </div>
               <div class="category-block">
                 <h4>Medium — 2 Layers</h4>
                 <ul>
@@ -84,7 +94,10 @@
             </article>
 
             <article class="pricing-card large-card">
-              <h3>CHARACTER CAKES</h3>
+              <div class="card-header">
+                <h3>CHARACTER CAKES</h3>
+                <span class="pill alt">Custom</span>
+              </div>
               <p class="card-copy">
                 Custom character cakes are priced according to the finish and complexity of the design.
               </p>
@@ -116,14 +129,18 @@
             </article>
 
             <article class="pricing-card">
-              <h3>DELUXE CAKES</h3>
+              <div class="card-header">
+                <h3>DELUXE CAKES</h3>
+              </div>
               <p class="card-copy">
                 Our Deluxe cakes are made with selected deluxe flavours and premium fillings.
               </p>
             </article>
 
             <article class="pricing-card">
-              <h3>TALL CAKES</h3>
+              <div class="card-header">
+                <h3>TALL CAKES</h3>
+              </div>
               <p class="card-copy">
                 9" and 10" cakes, usually made with 4 layers.
               </p>
@@ -131,7 +148,9 @@
             </article>
 
             <article class="pricing-card">
-              <h3>TIERED CAKES</h3>
+              <div class="card-header">
+                <h3>TIERED CAKES</h3>
+              </div>
               <p class="card-copy">
                 Our tiered cakes are completely customised.
               </p>
@@ -139,7 +158,9 @@
             </article>
 
             <article class="pricing-card">
-              <h3>SPECIAL CAKE SIZES &amp; SHAPES</h3>
+              <div class="card-header">
+                <h3>SPECIAL CAKE SIZES &amp; SHAPES</h3>
+              </div>
               <ul class="list-col">
                 <li>Sheet cakes</li>
                 <li>Oval cakes</li>
@@ -150,6 +171,46 @@
               </ul>
               <p class="card-copy strong-copy">Pricing available after consultation.</p>
             </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="gallery" class="section-shell gallery-section">
+        <div class="container">
+          <div class="section-heading left-aligned">
+            <p class="eyebrow">Gallery</p>
+            <h2>Signature looks loved by happy clients.</h2>
+          </div>
+
+          <div class="gallery-grid">
+            <figure class="gallery-card">
+              <img
+                src="https://images.unsplash.com/photo-1535141192574-5d4897c12636?auto=format&fit=crop&w=900&q=80"
+                alt="Floral wedding cake design"
+              />
+              <figcaption>Floral wedding cakes</figcaption>
+            </figure>
+            <figure class="gallery-card">
+              <img
+                src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=900&q=80"
+                alt="Birthday cake for a celebration"
+              />
+              <figcaption>Birthday moments</figcaption>
+            </figure>
+            <figure class="gallery-card">
+              <img
+                src="https://images.unsplash.com/photo-1464349095431-e9a21285b5f3?auto=format&fit=crop&w=900&q=80"
+                alt="Character cake with custom design"
+              />
+              <figcaption>Character cakes</figcaption>
+            </figure>
+            <figure class="gallery-card">
+              <img
+                src="https://images.unsplash.com/photo-1486427944299-d1955d23e34d?auto=format&fit=crop&w=900&q=80"
+                alt="Elegant cake detail with soft pastel finish"
+              />
+              <figcaption>Luxury finishes</figcaption>
+            </figure>
           </div>
         </div>
       </section>
