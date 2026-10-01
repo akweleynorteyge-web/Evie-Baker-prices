@@ -124,6 +124,27 @@ h1, h2, h3, h4, p {
   min-height: 72px;
 }
 
+.nav-brand {
+  display: flex;
+  align-items: center;
+}
+
+.nav-brand a.brand {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.brand-logo {
+  display: block;
+  width: auto;
+  max-width: 220px;
+  height: 52px;
+  object-fit: contain;
+  border-radius: 0;
+  filter: none;
+}
+
 .brand {
   font-size: clamp(1.4rem, 2vw, 2rem);
   font-weight: 700;
@@ -716,6 +737,20 @@ td {
   color: rgba(255, 255, 255, 0.9);
 }
 
+.brand-logo {
+  display: block;
+  width: auto;
+  max-width: 220px;
+  height: 52px;
+  object-fit: contain;
+  border-radius: 0;
+}
+
+.footer-logo {
+  max-width: 220px;
+  height: 48px;
+}
+
 /* Mobile WhatsApp */
 .whatsapp-float {
   position: fixed;
@@ -831,6 +866,11 @@ td {
   .footer .container {
     flex-direction: column;
     text-align: center;
+  }
+
+  .brand-logo {
+    max-width: 170px;
+    height: 42px;
   }
 
   .whatsapp-float {
